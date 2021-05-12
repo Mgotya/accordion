@@ -62,9 +62,9 @@ const items = [
 ];
 
 export const SampleAccordion = ({
-  reducers,
+  reducers = [],
 }: {
-  reducers: Array<SingleActionReducer | AccordionReducer>;
+  reducers?: Array<SingleActionReducer | AccordionReducer>;
 }) => {
   const { openIndexes, toggleIndex } = useAccordion({
     reducer: combineReducers(...reducers, accordionReducer),

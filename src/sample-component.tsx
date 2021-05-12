@@ -73,7 +73,8 @@ export const SampleAccordion = ({
   return (
     <Accordion.Container>
       {items.map((item, index) => (
-        <Accordion.Item key={index} >
+        //Do not use key as index in production
+        <Accordion.Item key={index} > 
           <Accordion.Title onClick={() => toggleIndex(index)}>
             {item.title}
             <span>{openIndexes.includes(index) ? '👇' : '👈'}</span>

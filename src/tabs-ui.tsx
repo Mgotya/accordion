@@ -20,12 +20,7 @@ const Tab = {
       padding: "20px",
       position: "absolute",
       left: 0,
-      margin: "auto 200px",
-      //   position: "absolute",
-      //   top: "130px",
-      //   left: "300px",
-      //   minHeight: 120,
-      //   maxWidth: "800px",
+      margin: "auto 800px",
     },
     ({ isOpen }: { isOpen: boolean }) => ({
       display: isOpen ? "block" : "none",

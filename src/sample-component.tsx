@@ -8,7 +8,7 @@ import {
 } from "./accordion/reducers";
 import Accordion from "./accordion/ui";
 
-const items = [
+export const items = [
   {
     title: "Piccolo",
     content: (

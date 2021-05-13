@@ -1,11 +1,12 @@
 import React from "react";
-import { SampleAccordion } from "./sample-component";
+import { items, SampleAccordion } from "./sample-component";
 
 import './styles.css';
+import { Tabs } from "./tabs";
 
 
 function App() {
-  return <SampleAccordion />;
+  return <Tabs items={items}/>;
 }
 
 export default App;

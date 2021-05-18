@@ -20,7 +20,7 @@ const Tab = {
       padding: "20px",
       position: "absolute",
       left: 0,
-      margin: "auto 800px",
+      margin: "auto 200px",
     },
     ({ isOpen }: { isOpen: boolean }) => ({
       display: isOpen ? "block" : "none",

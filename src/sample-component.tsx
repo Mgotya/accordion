@@ -3,7 +3,7 @@ import {
   SingleActionReducer,
   AccordionReducer,
   useAccordion,
-  combineReducers,
+  useFirstReducer,
   accordionReducer,
 } from "./accordion/reducers";
 import Accordion from "./accordion/ui";
@@ -67,7 +67,7 @@ export const SampleAccordion = ({
   reducers?: Array<SingleActionReducer | AccordionReducer>;
 }) => {
   const { openIndexes, toggleIndex } = useAccordion({
-    reducer: combineReducers(...reducers, accordionReducer),
+    reducer: useFirstReducer(...reducers, accordionReducer),
   });
 
   return (

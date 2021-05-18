@@ -30,7 +30,7 @@ export const accordionReducer: AccordionReducer = (
   }
 };
 
-export const combineReducers = (
+export const useFirstReducer = (
   ...reducers: (AccordionReducer | SingleActionReducer)[]
 ): AccordionReducer => {
   return (state, action) => {

@@ -1,12 +1,10 @@
 import React from "react";
-import { items, SampleAccordion } from "./sample-component";
+import { VariationControll } from "./all-variations";
 
-import './styles.css';
-import { Tabs } from "./tabs";
-
+import "./styles.css";
 
 function App() {
-  return <Tabs items={items}/>;
+  return <VariationControll />;
 }
 
 export default App;

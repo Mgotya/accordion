@@ -1,7 +1,7 @@
 import React from "react";
 import {
   useAccordion,
-  combineReducers,
+  useFirstReducer,
   preventCloseReducer,
   singleReducer,
   accordionReducer,
@@ -10,7 +10,7 @@ import Tab from "./tabs-ui";
 
 const useTabs = () => {
   return useAccordion({
-    reducer: combineReducers(
+    reducer: useFirstReducer(
       preventCloseReducer,
       singleReducer,
       accordionReducer

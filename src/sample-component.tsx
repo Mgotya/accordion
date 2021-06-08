@@ -61,7 +61,7 @@ export const items = [
   },
 ];
 
-export const SampleAccordion = ({
+export const SideAccordion = ({
   reducers = [],
 }: {
   reducers?: Array<SingleActionReducer | AccordionReducer>;
@@ -85,6 +85,32 @@ export const SampleAccordion = ({
             isOpen={openIndexes.includes(index)}
             className="itemBody"
           >
+            {item.content}
+          </Accordion.Content>
+        </Accordion.Item>
+      ))}
+    </Accordion.Container>
+  );
+};
+
+export const DefaultAccordion = ({
+  reducers = [],
+}: {
+  reducers?: Array<SingleActionReducer | AccordionReducer>;
+}) => {
+  const { openIndexes, toggleIndex } = useAccordion({
+    reducer: useFirstReducer(...reducers, accordionReducer),
+  });
+
+  return (
+    <Accordion.Container>
+      {items.map((item, index) => (
+        <Accordion.Item key={index}>
+          <Accordion.Title onClick={() => toggleIndex(index)}>
+            {item.title}
+            <span>{openIndexes.includes(index) ? "👉" : "👈"}</span>
+          </Accordion.Title>
+          <Accordion.Content isOpen={openIndexes.includes(index)}>
             {item.content}
           </Accordion.Content>
         </Accordion.Item>

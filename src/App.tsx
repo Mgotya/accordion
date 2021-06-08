@@ -1,10 +1,10 @@
 import React from "react";
-import { VariationControll } from "./all-variations";
+import { VariationControls } from "./all-variations";
 
 import "./styles.css";
 
 function App() {
-  return <VariationControll />;
+  return <VariationControls />;
 }
 
 export default App;

@@ -45,11 +45,11 @@ const SideAccordion = ({
 const DemoComponent = () => (
   <>
     <Accordions items={items} />
-    {/* <SideAccordion /> */}
-    {/* <Accordions items={items} reducers={[singleReducer]} /> */}
-    {/* <Accordions items={items} reducers={[preventCloseReducer]} /> */}
-    {/* <Accordions items={items} reducers={[preventCloseReducer, singleReducer]} /> */}
-    {/* <Tabs items={items} /> */}
+    <SideAccordion />
+    <Accordions items={items} reducers={[singleReducer]} />
+    <Accordions items={items} reducers={[preventCloseReducer]} />
+    <Accordions items={items} reducers={[preventCloseReducer, singleReducer]} />
+    <Tabs items={items} />
   </>
 );
 

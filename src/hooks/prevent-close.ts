@@ -1,5 +1,3 @@
-import { SingleActionReducer } from "./utilities";
-
 export const preventCloseReducer: SingleActionReducer = (
   openIndexes,
   { type, payload }

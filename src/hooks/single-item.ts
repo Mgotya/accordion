@@ -1,5 +1,3 @@
-import { SingleActionReducer } from "./utilities";
-
 export const singleReducer: SingleActionReducer = (
   openIndexes,
   { type, payload }
